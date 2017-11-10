@@ -5,7 +5,6 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    // 标签列表
     {   
       path: '/', 
       component: () => import('./components/Example')
