@@ -1,0 +1,71 @@
+﻿$axure.loadCurrentPage({
+  "url":"新增角色.html",
+  "generationDate":new Date(1510280855564.01),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"4fe9948613fe4a87a631980593bf247a",
+    "type":"Axure:Page",
+    "name":"新增角色",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"458a2b2a45344b7d8815462b4ab287d3",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":50,
+              "y":50},
+            "size":{
+              "width":1776,
+              "height":926}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"5dff7e316f9e40b6aba4399845f9e906",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":50,
+                  "y":50},
+                "size":{
+                  "width":1776,
+                  "height":926}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/新增角色/u0.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "458a2b2a45344b7d8815462b4ab287d3":{
+      "scriptId":"u0"},
+    "5dff7e316f9e40b6aba4399845f9e906":{
+      "scriptId":"u1"}}});

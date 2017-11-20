@@ -1,0 +1,108 @@
+﻿$axure.loadCurrentPage({
+  "url":"查询.html",
+  "generationDate":new Date(1510280855533.01),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"fc9893940aed4058afe00056139cd9f7",
+    "type":"Axure:Page",
+    "name":"查询",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"772634c7c71441119639d0b1a47e4721",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":50,
+              "y":50},
+            "size":{
+              "width":1790,
+              "height":930}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"002e45aff03b47cdb35c36443ec37ce7",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":50,
+                  "y":50},
+                "size":{
+                  "width":1790,
+                  "height":930}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/查询/u0.png"}},
+{
+          "id":"442f57185d4340988dcf15b3376a09fe",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":332,
+              "y":950},
+            "size":{
+              "width":528,
+              "height":46}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"1ed3bd1f029f466d88e116598408fc06",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":332,
+                  "y":950},
+                "size":{
+                  "width":528,
+                  "height":46}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/查询/u2.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "772634c7c71441119639d0b1a47e4721":{
+      "scriptId":"u0"},
+    "002e45aff03b47cdb35c36443ec37ce7":{
+      "scriptId":"u1"},
+    "442f57185d4340988dcf15b3376a09fe":{
+      "scriptId":"u2"},
+    "1ed3bd1f029f466d88e116598408fc06":{
+      "scriptId":"u3"}}});

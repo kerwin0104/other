@@ -1,0 +1,145 @@
+﻿$axure.loadCurrentPage({
+  "url":"编辑信息.html",
+  "generationDate":new Date(1510280855987.01),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"2dbfbe20b16b4a34b481379b5b858eab",
+    "type":"Axure:Page",
+    "name":"编辑信息",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"1b6577677d8e42ad98cf60048722ea75",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":420,
+              "y":50},
+            "size":{
+              "width":320,
+              "height":600}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"88b2d70a4b634124ae6b270f3e316fc4",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":420,
+                  "y":50},
+                "size":{
+                  "width":320,
+                  "height":600}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/编辑信息/u0.png"}},
+{
+          "id":"9af7aa9b1e234330a53c998b588448f3",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":50,
+              "y":50},
+            "size":{
+              "width":320,
+              "height":600}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"a067ab7f1ab446a18677dc8272ee7238",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":50,
+                  "y":50},
+                "size":{
+                  "width":320,
+                  "height":600}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/新建日历提醒/u0.png"}},
+{
+          "id":"e9335e1d4ba649e1acc96b846cdfc96f",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":772,
+              "y":320},
+            "size":{
+              "width":268,
+              "height":112}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"b6dc5fd38a2f437b92bafc3c4295de4b",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":772,
+                  "y":320},
+                "size":{
+                  "width":268,
+                  "height":112}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "1b6577677d8e42ad98cf60048722ea75":{
+      "scriptId":"u0"},
+    "88b2d70a4b634124ae6b270f3e316fc4":{
+      "scriptId":"u1"},
+    "9af7aa9b1e234330a53c998b588448f3":{
+      "scriptId":"u2"},
+    "a067ab7f1ab446a18677dc8272ee7238":{
+      "scriptId":"u3"},
+    "e9335e1d4ba649e1acc96b846cdfc96f":{
+      "scriptId":"u4"},
+    "b6dc5fd38a2f437b92bafc3c4295de4b":{
+      "scriptId":"u5"}}});

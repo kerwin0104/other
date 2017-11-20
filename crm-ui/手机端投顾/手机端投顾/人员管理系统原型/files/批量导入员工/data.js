@@ -1,0 +1,71 @@
+﻿$axure.loadCurrentPage({
+  "url":"批量导入员工.html",
+  "generationDate":new Date(1510280855395.01),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"5b70daa85b1449edba93061d7abc4410",
+    "type":"Axure:Page",
+    "name":"批量导入员工",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"27eff42b3a2b4659b8a2e942a006db3d",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":50,
+              "y":50},
+            "size":{
+              "width":1779,
+              "height":933}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"664f2e960e754aaeab938293942ffc6f",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":50,
+                  "y":50},
+                "size":{
+                  "width":1779,
+                  "height":933}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/批量导入员工/u0.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "27eff42b3a2b4659b8a2e942a006db3d":{
+      "scriptId":"u0"},
+    "664f2e960e754aaeab938293942ffc6f":{
+      "scriptId":"u1"}}});

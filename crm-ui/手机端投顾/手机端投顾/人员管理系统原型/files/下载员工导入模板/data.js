@@ -1,0 +1,71 @@
+﻿$axure.loadCurrentPage({
+  "url":"下载员工导入模板.html",
+  "generationDate":new Date(1510280855412.01),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"1d9d1af8728b401192254d0869626e11",
+    "type":"Axure:Page",
+    "name":"下载员工导入模板",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"75f1813dd98648589d7d0c0c7a436de8",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":50,
+              "y":50},
+            "size":{
+              "width":1778,
+              "height":690}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"d6b394b58c544bc5b32600fc649552e9",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":50,
+                  "y":50},
+                "size":{
+                  "width":1778,
+                  "height":690}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/下载员工导入模板/u0.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "75f1813dd98648589d7d0c0c7a436de8":{
+      "scriptId":"u0"},
+    "d6b394b58c544bc5b32600fc649552e9":{
+      "scriptId":"u1"}}});

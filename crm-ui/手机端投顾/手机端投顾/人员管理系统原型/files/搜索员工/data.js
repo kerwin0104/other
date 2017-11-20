@@ -1,0 +1,184 @@
+﻿$axure.loadCurrentPage({
+  "url":"搜索员工.html",
+  "generationDate":new Date(1510280855367.01),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"3aeaabebe6c749469f67e513ea69de2d",
+    "type":"Axure:Page",
+    "name":"搜索员工",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"60bc607c5a24485fa75b933e2f5d5923",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":50,
+              "y":50},
+            "size":{
+              "width":1779,
+              "height":925}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"b8d35b5ae8594561873b76bb736dab40",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":50,
+                  "y":50},
+                "size":{
+                  "width":1779,
+                  "height":925}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/搜索员工/u0.png"}},
+{
+          "id":"95be57379fc14c3aad32de294372509b",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":1728,
+              "y":592},
+            "size":{
+              "width":50,
+              "height":30}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"c4c2dd0f6b1447c4b4f0575d9261ee44",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":1728,
+                  "y":592},
+                "size":{
+                  "width":50,
+                  "height":30}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/搜索员工/u2.png"}},
+{
+          "id":"0892852f391b4c4b9b45fbce7c03e0bd",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontSize":"20px",
+            "location":{
+              "x":1709,
+              "y":510},
+            "size":{
+              "width":81,
+              "height":24}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"fd435f818e444e71a969a360472ecf99",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontSize":"20px",
+                "location":{
+                  "x":1709,
+                  "y":510},
+                "size":{
+                  "width":81,
+                  "height":24}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"3e536363c46b4fd2acaa7f75023bc83a",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":392,
+              "y":932},
+            "size":{
+              "width":658,
+              "height":48}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"6b7ff7560e66409993652c87ce98acc0",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":392,
+                  "y":932},
+                "size":{
+                  "width":658,
+                  "height":48}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/搜索员工/u6.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "60bc607c5a24485fa75b933e2f5d5923":{
+      "scriptId":"u0"},
+    "b8d35b5ae8594561873b76bb736dab40":{
+      "scriptId":"u1"},
+    "95be57379fc14c3aad32de294372509b":{
+      "scriptId":"u2"},
+    "c4c2dd0f6b1447c4b4f0575d9261ee44":{
+      "scriptId":"u3"},
+    "0892852f391b4c4b9b45fbce7c03e0bd":{
+      "scriptId":"u4"},
+    "fd435f818e444e71a969a360472ecf99":{
+      "scriptId":"u5"},
+    "3e536363c46b4fd2acaa7f75023bc83a":{
+      "scriptId":"u6"},
+    "6b7ff7560e66409993652c87ce98acc0":{
+      "scriptId":"u7"}}});

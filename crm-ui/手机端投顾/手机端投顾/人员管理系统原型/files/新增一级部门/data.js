@@ -1,0 +1,71 @@
+﻿$axure.loadCurrentPage({
+  "url":"新增一级部门.html",
+  "generationDate":new Date(1510280855380.01),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"1c49822e336f49e1908942d4ac23b02d",
+    "type":"Axure:Page",
+    "name":"新增一级部门",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"9fedc5e14b7a41f0a79f629013557d88",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":50,
+              "y":50},
+            "size":{
+              "width":1798,
+              "height":928}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"08f0088941f04fa1ac448b3050935ef6",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":50,
+                  "y":50},
+                "size":{
+                  "width":1798,
+                  "height":928}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/新增一级部门/u0.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "9fedc5e14b7a41f0a79f629013557d88":{
+      "scriptId":"u0"},
+    "08f0088941f04fa1ac448b3050935ef6":{
+      "scriptId":"u1"}}});

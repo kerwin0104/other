@@ -1,0 +1,71 @@
+﻿$axure.loadCurrentPage({
+  "url":"组织架构.html",
+  "generationDate":new Date(1510280855329.01),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"ddf8236e15174e7cab567932dc6bf0d1",
+    "type":"Axure:Page",
+    "name":"组织架构",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"1d16150a4108410483641abfd5877608",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":42,
+              "y":50},
+            "size":{
+              "width":1770,
+              "height":928}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"0864845011034a32a01133a916ac9257",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":42,
+                  "y":50},
+                "size":{
+                  "width":1770,
+                  "height":928}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/组织架构/u0.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "1d16150a4108410483641abfd5877608":{
+      "scriptId":"u0"},
+    "0864845011034a32a01133a916ac9257":{
+      "scriptId":"u1"}}});

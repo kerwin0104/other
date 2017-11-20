@@ -1,0 +1,71 @@
+﻿$axure.loadCurrentPage({
+  "url":"职位管理.html",
+  "generationDate":new Date(1510280855433.01),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"53c7d85252444b6d9bb71ece0ff34c5b",
+    "type":"Axure:Page",
+    "name":"职位管理",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"应用字体",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"6f2e732976fd4524a33363cd8197ff93",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":50,
+              "y":50},
+            "size":{
+              "width":1755,
+              "height":925}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"fb4ad4330db94cb5b38eded407a73ae4",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":50,
+                  "y":50},
+                "size":{
+                  "width":1755,
+                  "height":925}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/职位管理/u0.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "6f2e732976fd4524a33363cd8197ff93":{
+      "scriptId":"u0"},
+    "fb4ad4330db94cb5b38eded407a73ae4":{
+      "scriptId":"u1"}}});
