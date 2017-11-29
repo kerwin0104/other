@@ -86,7 +86,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "js/" + ({}[chunkId]||chunkId) + "." + {"0":"0cb2f113913552eef236"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "js/" + ({}[chunkId]||chunkId) + "." + {"0":"58542ac99e4e87bb257c","2":"7976c1f284a443a6036a","4":"005364e5b2a9b2a14993","8":"2a4aff2a7fa3d3b0544b","9":"997d0f117ce9168b4c4d"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -12093,7 +12093,7 @@ function injectStyle (ssrContext) {
 }
 var normalizeComponent = __webpack_require__(10)
 /* script */
-var __vue_script__ = null
+var __vue_script__ = __webpack_require__(68)
 /* template */
 var __vue_template__ = __webpack_require__(16)
 /* template functional */
@@ -12142,9 +12142,108 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_c("router-view")], 1)
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "container-fluid" }, [
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          { staticClass: "col-sm-3 col-md-2 sidebar" },
+          [_c("left-nav")],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"
+          },
+          [_c("router-view")],
+          1
+        )
+      ])
+    ])
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "nav",
+      { staticClass: "navbar navbar-inverse navbar-fixed-top" },
+      [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "navbar-header" }, [
+            _c(
+              "button",
+              {
+                staticClass: "navbar-toggle collapsed",
+                attrs: {
+                  type: "button",
+                  "data-toggle": "collapse",
+                  "data-target": "#navbar",
+                  "aria-expanded": "false",
+                  "aria-controls": "navbar"
+                }
+              },
+              [
+                _c("span", { staticClass: "sr-only" }, [
+                  _vm._v("Toggle navigation")
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "icon-bar" }),
+                _vm._v(" "),
+                _c("span", { staticClass: "icon-bar" }),
+                _vm._v(" "),
+                _c("span", { staticClass: "icon-bar" })
+              ]
+            ),
+            _vm._v(" "),
+            _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
+              _vm._v("\n          业务支持系统管理后台\n        ")
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "navbar-collapse collapse",
+              attrs: { id: "navbar" }
+            },
+            [
+              _c("ul", { staticClass: "nav navbar-nav navbar-right" }, [
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Dashboard")])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Settings")])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Profile")])
+                ]),
+                _vm._v(" "),
+                _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Help")])])
+              ]),
+              _vm._v(" "),
+              _c("form", { staticClass: "navbar-form navbar-right" }, [
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: { type: "text", placeholder: "Search..." }
+                })
+              ])
+            ]
+          )
+        ])
+      ]
+    )
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -12181,7 +12280,27 @@ exports.default = new _vueRouter2.default({
   routes: [{
     path: '/',
     component: function component() {
-      return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 44));
+      return __webpack_require__.e/* import() */(9).then(__webpack_require__.bind(null, 62));
+    }
+  }, {
+    path: '/search_staff',
+    component: function component() {
+      return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 65));
+    }
+  }, {
+    path: '/position_manage',
+    component: function component() {
+      return __webpack_require__.e/* import() */(8).then(__webpack_require__.bind(null, 74));
+    }
+  }, {
+    path: '/role_manage',
+    component: function component() {
+      return __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 79));
+    }
+  }, {
+    path: '/search_clientele',
+    component: function component() {
+      return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 84));
     }
   }]
 });
@@ -45904,10 +46023,299 @@ exports = module.exports = __webpack_require__(48)(undefined);
 
 
 // module
-exports.push([module.i, "/*\n * Base structure\n */\n/* Move down content because we have a fixed navbar that is 50px tall */\nbody {\n  padding-top: 50px;\n}\n/*\n * Global add-ons\n */\n.sub-header {\n  padding-bottom: 10px;\n  border-bottom: 1px solid #eee;\n}\n/*\n * Top navigation\n * Hide default border to remove 1px line.\n */\n.navbar-fixed-top {\n  border: 0;\n}\n/*\n * Sidebar\n */\n/* Hide for mobile, show later */\n.sidebar {\n  display: none;\n}\n@media (min-width: 768px) {\n.sidebar {\n    position: fixed;\n    top: 51px;\n    bottom: 0;\n    left: 0;\n    z-index: 1000;\n    display: block;\n    padding: 20px;\n    overflow-x: hidden;\n    overflow-y: auto;\n    /* Scrollable contents if viewport is shorter than content. */\n    background-color: #f5f5f5;\n    border-right: 1px solid #eee;\n}\n}\n/* Sidebar navigation */\n.nav-sidebar {\n  margin-right: -21px;\n  /* 20px padding + 1px border */\n  margin-bottom: 20px;\n  margin-left: -20px;\n}\n.nav-sidebar > li > a {\n  padding-right: 20px;\n  padding-left: 20px;\n}\n.nav-sidebar > .active > a,\n.nav-sidebar > .active > a:hover,\n.nav-sidebar > .active > a:focus {\n  color: #fff;\n  background-color: #428bca;\n}\n/*\n * Main content\n */\n.main {\n  padding: 20px;\n}\n@media (min-width: 768px) {\n.main {\n    padding-right: 40px;\n    padding-left: 40px;\n}\n}\n.main .page-header {\n  margin-top: 0;\n}\n/*\n * Placeholder dashboard ideas\n */\n.placeholders {\n  margin-bottom: 30px;\n  text-align: center;\n}\n.placeholders h4 {\n  margin-bottom: 0;\n}\n.placeholder {\n  margin-bottom: 20px;\n}\n.placeholder img {\n  display: inline-block;\n  border-radius: 50%;\n}\n.nav-submenu > li > a {\n  padding-left: 40px;\n}\n.nav-submenu > li > a:hover {\n  background-color: #428bca;\n  color: #fff;\n}\n.nav-submenu .active > a,\n.nav-submenu .active > a:hover {\n  background-color: #428bca;\n  color: #fff;\n}\n", ""]);
+exports.push([module.i, "/*\n * Base structure\n */\n/* Move down content because we have a fixed navbar that is 50px tall */\nbody {\n  padding-top: 50px;\n}\n/*\n * Global add-ons\n */\n.sub-header {\n  padding-bottom: 10px;\n  border-bottom: 1px solid #eee;\n}\n/*\n * Top navigation\n * Hide default border to remove 1px line.\n */\n.navbar-fixed-top {\n  border: 0;\n}\n/*\n * Sidebar\n */\n/* Hide for mobile, show later */\n.sidebar {\n  display: none;\n}\n@media (min-width: 768px) {\n.sidebar {\n    position: fixed;\n    top: 51px;\n    bottom: 0;\n    left: 0;\n    z-index: 1000;\n    display: block;\n    padding: 20px;\n    overflow-x: hidden;\n    overflow-y: auto;\n    /* Scrollable contents if viewport is shorter than content. */\n    background-color: #f5f5f5;\n    border-right: 1px solid #eee;\n}\n}\n/* Sidebar navigation */\n.nav-sidebar {\n  margin-right: -21px;\n  /* 20px padding + 1px border */\n  margin-bottom: 20px;\n  margin-left: -20px;\n}\n.nav-sidebar > li > a {\n  padding-right: 20px;\n  padding-left: 20px;\n}\n.nav-sidebar > .active > a,\n.nav-sidebar > .active > a:hover,\n.nav-sidebar > .active > a:focus {\n  color: #fff;\n  background-color: #428bca;\n}\n/*\n * Main content\n */\n.main {\n  padding: 20px;\n}\n@media (min-width: 768px) {\n.main {\n    padding-right: 40px;\n    padding-left: 40px;\n}\n}\n.main .page-header {\n  margin-top: 0;\n}\n/*\n * Placeholder dashboard ideas\n */\n.placeholders {\n  margin-bottom: 30px;\n  text-align: center;\n}\n.placeholders h4 {\n  margin-bottom: 0;\n}\n.placeholder {\n  margin-bottom: 20px;\n}\n.placeholder img {\n  display: inline-block;\n  border-radius: 50%;\n}\n.nav-submenu > li > a {\n  padding-left: 40px;\n}\n.nav-submenu > li > a:hover {\n  background-color: #428bca;\n  color: #fff;\n}\n.nav-submenu a:hover {\n  opacity: .6;\n}\n.nav-submenu .active > a:hover {\n  opacity: 1;\n}\n.nav-submenu .active > a,\n.nav-submenu .active > a:hover,\n.nav-submenu .active > a:focus,\n.nav-submenu .active > a:active {\n  background-color: #428bca;\n  color: #fff;\n}\n.mt30 {\n  margin-top: 30px;\n}\n", ""]);
 
 // exports
 
+
+/***/ }),
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _LeftNav = __webpack_require__(69);
+
+var _LeftNav2 = _interopRequireDefault(_LeftNav);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+  name: 'App',
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  },
+
+  components: {
+    LeftNav: _LeftNav2.default
+  }
+}; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/***/ }),
+/* 69 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(10)
+/* script */
+var __vue_script__ = __webpack_require__(70)
+/* template */
+var __vue_template__ = __webpack_require__(71)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/LeftNav.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-625aadb5", Component.options)
+  } else {
+    hotAPI.reload("data-v-625aadb5", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+  name: 'SearchStaff',
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  }
+};
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("ul", { staticClass: "nav nav-sidebar" }, [
+      _c("li", { staticClass: "open" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "ul",
+          { staticClass: "nav nav-submenu" },
+          [
+            _c(
+              "router-link",
+              { attrs: { tag: "li", "exact-active-class": "active", to: "/" } },
+              [
+                _c("a", { attrs: { href: "javascript:;" } }, [
+                  _vm._v("组织架构")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              {
+                attrs: {
+                  tag: "li",
+                  "exact-active-class": "active",
+                  to: "/position_manage"
+                }
+              },
+              [
+                _c("a", { attrs: { href: "javascript:;" } }, [
+                  _vm._v("职位管理")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "router-link",
+              {
+                attrs: {
+                  tag: "li",
+                  "exact-active-class": "active",
+                  to: "/role_manage"
+                }
+              },
+              [
+                _c("a", { attrs: { href: "javascript:;" } }, [
+                  _vm._v("角色管理")
+                ])
+              ]
+            )
+          ],
+          1
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _c("ul", { staticClass: "nav nav-sidebar" }, [
+      _c("li", [
+        _c("a", { attrs: { href: "#" } }, [_vm._v("客户管理")]),
+        _vm._v(" "),
+        _c(
+          "ul",
+          { staticClass: "nav nav-submenu" },
+          [
+            _c(
+              "router-link",
+              {
+                attrs: {
+                  tag: "li",
+                  "exact-active-class": "active",
+                  to: "/search_clientele"
+                }
+              },
+              [
+                _c("a", { attrs: { href: "javascript:;" } }, [
+                  _vm._v("客户列表")
+                ])
+              ]
+            )
+          ],
+          1
+        )
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "#" } }, [
+      _vm._v("\n        组织架构管理\n        "),
+      _c("i", { staticClass: "glyphicon glyphicon-menu-down pull-right" })
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-625aadb5", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);
