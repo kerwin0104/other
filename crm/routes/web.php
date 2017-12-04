@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// 组织架构
+Route::get('/api/structure/list', 'StructureController@list');
+
