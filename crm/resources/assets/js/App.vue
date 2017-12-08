@@ -37,19 +37,52 @@
         </div>
       </div>
     </div>
+
+    <modal-dialog title="提示" :isShow="isAlertShow" :isHideCancel="true" @ok="onAlertOk" @cancel="onAlertCancel" class="alert-dialog">
+      <div>
+        {{alertContent }}
+      </div>
+    </modal-dialog>
   </div>
 </template>
 
 <script>
+  import urls from './urls'
   import LeftNav from './components/LeftNav'
+  import ModalDialog from './components/ModalDialog'
+
+  window.urls = urls
 
   export default {
     name: 'App',
+    data () {
+      var data = {}
+      data.isAlertShow = false
+      data.alertContent = ''
+      return data
+    },
     mounted() {
-      console.log('Component mounted.')
+      this.$root.$on('alert', content => {
+        this.alertContent = content
+        this.isAlertShow = true
+        Vue.nextTick(() => {
+          $('.modal-backdrop:last-child').addClass('alert-modal')
+        })
+      })
     },
     components: {
-      LeftNav
+      LeftNav,
+      ModalDialog 
+    },
+    methods: {
+      onAlertOk () {
+        this.isAlertShow = false
+        this.alertContent = ''
+      },
+      onAlertCancel () {
+        this.isAlertShow = false
+        this.alertContent = ''
+      }
     }
   }
 </script>
@@ -188,5 +221,11 @@ body {
 
 .mt30 {
   margin-top: 30px;
+}
+.alert-modal{
+  z-index: 99999;
+}
+.alert-dialog {
+  z-index: 100000;
 }
 </style>

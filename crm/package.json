@@ -23,6 +23,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuejs-paginate": "^1.5.0"
   }
 }

@@ -86,7 +86,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "js/" + ({}[chunkId]||chunkId) + "." + {"0":"58542ac99e4e87bb257c","2":"7976c1f284a443a6036a","4":"005364e5b2a9b2a14993","8":"2a4aff2a7fa3d3b0544b","9":"997d0f117ce9168b4c4d"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "js/" + ({}[chunkId]||chunkId) + "." + {"0":"0ea8453b334be8a0d059","2":"7976c1f284a443a6036a","4":"005364e5b2a9b2a14993","8":"2a4aff2a7fa3d3b0544b","9":"6195a2e6b728360481b0"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -11823,11 +11823,17 @@ window.Vue = __webpack_require__(1);
 //     el: '#app'
 // });
 
-new _vue2.default({
+var app = new _vue2.default({
   el: '#app',
   router: _router2.default,
   template: '<App/>',
   components: { App: _App2.default }
+});
+
+$.ajaxSetup({
+  error: function error() {
+    app.$emit('alert', '网络错误，请稍后重试');
+  }
 });
 
 /***/ }),
@@ -12142,30 +12148,44 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { staticClass: "container-fluid" }, [
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          { staticClass: "col-sm-3 col-md-2 sidebar" },
-          [_c("left-nav")],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"
-          },
-          [_c("router-view")],
-          1
-        )
-      ])
-    ])
-  ])
+  return _c(
+    "div",
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            { staticClass: "col-sm-3 col-md-2 sidebar" },
+            [_c("left-nav")],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"
+            },
+            [_c("router-view")],
+            1
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "modal-dialog",
+        {
+          staticClass: "alert-dialog",
+          attrs: { title: "提示", isShow: _vm.isAlertShow, isHideCancel: true },
+          on: { ok: _vm.onAlertOk, cancel: _vm.onAlertCancel }
+        },
+        [_c("div", [_vm._v("\n      " + _vm._s(_vm.alertContent) + "\n    ")])]
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function() {
@@ -46023,7 +46043,7 @@ exports = module.exports = __webpack_require__(48)(undefined);
 
 
 // module
-exports.push([module.i, "/*\n * Base structure\n */\n/* Move down content because we have a fixed navbar that is 50px tall */\nbody {\n  padding-top: 50px;\n}\n/*\n * Global add-ons\n */\n.sub-header {\n  padding-bottom: 10px;\n  border-bottom: 1px solid #eee;\n}\n/*\n * Top navigation\n * Hide default border to remove 1px line.\n */\n.navbar-fixed-top {\n  border: 0;\n}\n/*\n * Sidebar\n */\n/* Hide for mobile, show later */\n.sidebar {\n  display: none;\n}\n@media (min-width: 768px) {\n.sidebar {\n    position: fixed;\n    top: 51px;\n    bottom: 0;\n    left: 0;\n    z-index: 1000;\n    display: block;\n    padding: 20px;\n    overflow-x: hidden;\n    overflow-y: auto;\n    /* Scrollable contents if viewport is shorter than content. */\n    background-color: #f5f5f5;\n    border-right: 1px solid #eee;\n}\n}\n/* Sidebar navigation */\n.nav-sidebar {\n  margin-right: -21px;\n  /* 20px padding + 1px border */\n  margin-bottom: 20px;\n  margin-left: -20px;\n}\n.nav-sidebar > li > a {\n  padding-right: 20px;\n  padding-left: 20px;\n}\n.nav-sidebar > .active > a,\n.nav-sidebar > .active > a:hover,\n.nav-sidebar > .active > a:focus {\n  color: #fff;\n  background-color: #428bca;\n}\n/*\n * Main content\n */\n.main {\n  padding: 20px;\n}\n@media (min-width: 768px) {\n.main {\n    padding-right: 40px;\n    padding-left: 40px;\n}\n}\n.main .page-header {\n  margin-top: 0;\n}\n/*\n * Placeholder dashboard ideas\n */\n.placeholders {\n  margin-bottom: 30px;\n  text-align: center;\n}\n.placeholders h4 {\n  margin-bottom: 0;\n}\n.placeholder {\n  margin-bottom: 20px;\n}\n.placeholder img {\n  display: inline-block;\n  border-radius: 50%;\n}\n.nav-submenu > li > a {\n  padding-left: 40px;\n}\n.nav-submenu > li > a:hover {\n  background-color: #428bca;\n  color: #fff;\n}\n.nav-submenu a:hover {\n  opacity: .6;\n}\n.nav-submenu .active > a:hover {\n  opacity: 1;\n}\n.nav-submenu .active > a,\n.nav-submenu .active > a:hover,\n.nav-submenu .active > a:focus,\n.nav-submenu .active > a:active {\n  background-color: #428bca;\n  color: #fff;\n}\n.mt30 {\n  margin-top: 30px;\n}\n", ""]);
+exports.push([module.i, "/*\n * Base structure\n */\n/* Move down content because we have a fixed navbar that is 50px tall */\nbody {\n  padding-top: 50px;\n}\n/*\n * Global add-ons\n */\n.sub-header {\n  padding-bottom: 10px;\n  border-bottom: 1px solid #eee;\n}\n/*\n * Top navigation\n * Hide default border to remove 1px line.\n */\n.navbar-fixed-top {\n  border: 0;\n}\n/*\n * Sidebar\n */\n/* Hide for mobile, show later */\n.sidebar {\n  display: none;\n}\n@media (min-width: 768px) {\n.sidebar {\n    position: fixed;\n    top: 51px;\n    bottom: 0;\n    left: 0;\n    z-index: 1000;\n    display: block;\n    padding: 20px;\n    overflow-x: hidden;\n    overflow-y: auto;\n    /* Scrollable contents if viewport is shorter than content. */\n    background-color: #f5f5f5;\n    border-right: 1px solid #eee;\n}\n}\n/* Sidebar navigation */\n.nav-sidebar {\n  margin-right: -21px;\n  /* 20px padding + 1px border */\n  margin-bottom: 20px;\n  margin-left: -20px;\n}\n.nav-sidebar > li > a {\n  padding-right: 20px;\n  padding-left: 20px;\n}\n.nav-sidebar > .active > a,\n.nav-sidebar > .active > a:hover,\n.nav-sidebar > .active > a:focus {\n  color: #fff;\n  background-color: #428bca;\n}\n/*\n * Main content\n */\n.main {\n  padding: 20px;\n}\n@media (min-width: 768px) {\n.main {\n    padding-right: 40px;\n    padding-left: 40px;\n}\n}\n.main .page-header {\n  margin-top: 0;\n}\n/*\n * Placeholder dashboard ideas\n */\n.placeholders {\n  margin-bottom: 30px;\n  text-align: center;\n}\n.placeholders h4 {\n  margin-bottom: 0;\n}\n.placeholder {\n  margin-bottom: 20px;\n}\n.placeholder img {\n  display: inline-block;\n  border-radius: 50%;\n}\n.nav-submenu > li > a {\n  padding-left: 40px;\n}\n.nav-submenu > li > a:hover {\n  background-color: #428bca;\n  color: #fff;\n}\n.nav-submenu a:hover {\n  opacity: .6;\n}\n.nav-submenu .active > a:hover {\n  opacity: 1;\n}\n.nav-submenu .active > a,\n.nav-submenu .active > a:hover,\n.nav-submenu .active > a:focus,\n.nav-submenu .active > a:active {\n  background-color: #428bca;\n  color: #fff;\n}\n.mt30 {\n  margin-top: 30px;\n}\n.alert-modal {\n  z-index: 99999;\n}\n.alert-dialog {\n  z-index: 100000;\n}\n", ""]);
 
 // exports
 
@@ -46045,63 +46065,104 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _urls = __webpack_require__(96);
+
+var _urls2 = _interopRequireDefault(_urls);
+
 var _LeftNav = __webpack_require__(69);
 
 var _LeftNav2 = _interopRequireDefault(_LeftNav);
 
+var _ModalDialog = __webpack_require__(93);
+
+var _ModalDialog2 = _interopRequireDefault(_ModalDialog);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+window.urls = _urls2.default; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
   name: 'App',
+  data: function data() {
+    var data = {};
+    data.isAlertShow = false;
+    data.alertContent = '';
+    return data;
+  },
   mounted: function mounted() {
-    console.log('Component mounted.');
+    var _this = this;
+
+    this.$root.$on('alert', function (content) {
+      _this.alertContent = content;
+      _this.isAlertShow = true;
+      Vue.nextTick(function () {
+        $('.modal-backdrop:last-child').addClass('alert-modal');
+      });
+    });
   },
 
   components: {
-    LeftNav: _LeftNav2.default
+    LeftNav: _LeftNav2.default,
+    ModalDialog: _ModalDialog2.default
+  },
+  methods: {
+    onAlertOk: function onAlertOk() {
+      this.isAlertShow = false;
+      this.alertContent = '';
+    },
+    onAlertCancel: function onAlertCancel() {
+      this.isAlertShow = false;
+      this.alertContent = '';
+    }
   }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+};
 
 /***/ }),
 /* 69 */
@@ -46316,6 +46377,237 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-625aadb5", module.exports)
   }
 }
+
+/***/ }),
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */,
+/* 79 */,
+/* 80 */,
+/* 81 */,
+/* 82 */,
+/* 83 */,
+/* 84 */,
+/* 85 */,
+/* 86 */,
+/* 87 */,
+/* 88 */,
+/* 89 */,
+/* 90 */,
+/* 91 */,
+/* 92 */,
+/* 93 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(10)
+/* script */
+var __vue_script__ = __webpack_require__(94)
+/* template */
+var __vue_template__ = __webpack_require__(95)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/ModalDialog.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-6f50a124", Component.options)
+  } else {
+    hotAPI.reload("data-v-6f50a124", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 94 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var gid = 0;
+exports.default = {
+  name: 'Dialog',
+  props: ['isShow', 'title', 'isHideCancel'],
+  data: function data() {
+    var data = {};
+    data.id = 'modal-id-' + gid++;
+    return data;
+  },
+
+  methods: {
+    onCancel: function onCancel() {
+      this.$emit('cancel');
+    },
+    onOk: function onOk() {
+      this.$emit('ok');
+    }
+  },
+  mounted: function mounted() {
+    $('#' + this.id).modal(this.isShow ? 'show' : 'hide');
+  },
+
+  watch: {
+    isShow: function isShow(val, oldVal) {
+      $('#' + this.id).modal(val ? 'show' : 'hide');
+    }
+  }
+};
+
+/***/ }),
+/* 95 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "modal fade",
+      attrs: {
+        id: _vm.id,
+        tabindex: "-1",
+        role: "dialog",
+        "data-backdrop": "static"
+      }
+    },
+    [
+      _c("div", { staticClass: "modal-dialog", attrs: { role: "document" } }, [
+        _c("div", { staticClass: "modal-content" }, [
+          _c("div", { staticClass: "modal-header" }, [
+            _c(
+              "button",
+              {
+                staticClass: "close",
+                attrs: { type: "button" },
+                on: { click: _vm.onCancel }
+              },
+              [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticClass: "modal-title" }, [
+              _vm._v("\n          " + _vm._s(_vm.title) + "\n        ")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "modal-body" }, [_vm._t("default")], 2),
+          _vm._v(" "),
+          _c("div", { staticClass: "modal-footer" }, [
+            _c(
+              "button",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: !_vm.isHideCancel,
+                    expression: "!isHideCancel"
+                  }
+                ],
+                staticClass: "btn btn-default",
+                attrs: { type: "button" },
+                on: { click: _vm.onCancel }
+              },
+              [_vm._v("取消")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary",
+                attrs: { type: "button" },
+                on: { click: _vm.onOk }
+              },
+              [_vm._v("确定")]
+            )
+          ])
+        ])
+      ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-6f50a124", module.exports)
+  }
+}
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var urls = {};
+
+urls.structureAdd = '/api/structure/add';
+
+exports.default = urls;
 
 /***/ })
 /******/ ]);

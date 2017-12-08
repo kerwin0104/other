@@ -25,9 +25,15 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
-new Vue({
+var app = new Vue({
   el: '#app',
   router,
   template: '<App/>',
   components: { App }
+})
+
+$.ajaxSetup({
+  error () {
+    app.$emit('alert', '网络错误，请稍后重试')
+  }
 })
